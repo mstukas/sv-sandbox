@@ -8,6 +8,7 @@ if __name__ == '__main__':
     version = os.popen("uname -a")
     cdir = os.popen("pwd")
     status = "running"
+    runtime = 10
 
     for line in version:
         swversion.append(line)
@@ -18,7 +19,7 @@ if __name__ == '__main__':
         swversion.append(line)
 
     print ("status=",status)
-
+    print ("runtime=",runtime)
     version.close()
     cdir.close()
 
